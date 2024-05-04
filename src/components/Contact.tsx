@@ -2,18 +2,21 @@ import Image from "next/image";
 
 export default function Contact() {
   return (
-    <div className="flex w-screen flex-col items-center justify-center gap-4 bg-white px-8 py-10 text-black md:px-10">
+    <div className="flex w-screen flex-col items-center justify-center gap-4 bg-white px-8 py-5 text-black md:px-10">
       <h2 className="font-lexend_deca text-2xl font-semibold md:text-4xl">
         Contact Us
       </h2>
-      <div className="flex flex-col justify-between gap-2 rounded-2xl border-4 border-[#28BE46] px-2 py-4 md:flex-row-reverse md:gap-5">
+      <div className="flex flex-col justify-between gap-2 rounded-2xl border-4 border-[#28BE46] px-6 py-5 md:flex-row-reverse md:gap-5 md:px-8 md:pb-5 md:pt-8">
         <Image
           src="/assets/contact.png"
           alt="Contact"
           width={403}
           height={352}
         />
-        <form action="" className="font-lexend_deca flex flex-col gap-3">
+        <form
+          action=""
+          className="font-lexend_deca flex flex-col gap-2 md:gap-3"
+        >
           <div className="flex flex-col gap-1">
             <label htmlFor="name" className="text-lg font-medium">
               Name

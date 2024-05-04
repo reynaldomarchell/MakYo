@@ -31,7 +31,7 @@ const benefitItems = [
 
 export default function Benefit() {
   return (
-    <div className="flex w-screen flex-col items-center justify-center gap-4 bg-white px-8 py-10 text-black md:px-10">
+    <div className="flex w-screen flex-col items-center justify-center gap-4 bg-white px-8 py-10 text-black md:px-10 md:pt-14">
       <h2 className="font-lexend_deca text-2xl font-semibold md:text-4xl">
         Why Choose Us?
       </h2>

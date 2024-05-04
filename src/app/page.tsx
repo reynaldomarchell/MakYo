@@ -6,7 +6,7 @@ import Product from "@/components/Product";
 
 export default function Home() {
   return (
-    <div className="h-screen w-full bg-[#040312]">
+    <div className="h-full w-full bg-[#040312]">
       <MainNav />
       <Hero />
       <Benefit />

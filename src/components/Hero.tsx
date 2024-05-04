@@ -11,7 +11,7 @@ export default function Hero() {
         className="w-80 md:w-96"
       />
       <div className="space-y-2">
-        <h1 className="font-linden_hill text-3xl md:text-5xl">
+        <h1 className="font-linden_hill text-3xl font-medium md:text-5xl">
           Best Quality E-Commerce in the World
         </h1>
         <p className="font-mulish pb-5 text-base md:pb-8 md:text-lg">

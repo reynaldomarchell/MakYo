@@ -1,6 +1,7 @@
 import Benefit from "@/components/Benefit";
 import Hero from "@/components/Hero";
 import MainNav from "@/components/MainNav";
+import Product from "@/components/Product";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <MainNav />
       <Hero />
       <Benefit />
+      <Product />
     </div>
   );
 }

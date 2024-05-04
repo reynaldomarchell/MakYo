@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="flex w-screen flex-col items-center justify-between gap-8 bg-[#040312] px-8 pb-20 pt-3 text-white md:flex-row-reverse md:px-10">
+    <div className="flex w-screen flex-col items-center justify-between gap-8 px-8 pb-20 pt-3 text-white md:flex-row-reverse md:px-10">
       <Image
         src="/assets/hero_image.png"
         alt="hero"

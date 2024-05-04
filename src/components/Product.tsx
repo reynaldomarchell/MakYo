@@ -51,7 +51,7 @@ export default function Product() {
               className="overflow-hidden rounded-t-lg object-cover"
             />
             <div className="flex flex-col items-center justify-center gap-2 px-2 pb-8 text-xl font-bold">
-              <h2>{item.title}</h2>
+              <h3>{item.title}</h3>
               <p className="text-center">{item.price}</p>
             </div>
           </div>

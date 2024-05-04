@@ -1,5 +1,11 @@
 import type { Metadata } from "next";
-import { Inter, Magra, Linden_Hill, Mulish } from "next/font/google";
+import {
+  Inter,
+  Magra,
+  Linden_Hill,
+  Mulish,
+  Lexend_Deca,
+} from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -22,6 +28,12 @@ const mulish = Mulish({
   variable: "--font-mulish",
 });
 
+const lexend_deca = Lexend_Deca({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-lexend_deca",
+});
+
 export const metadata: Metadata = {
   title: "MakYo",
   description: "Best Quality E-Commerce in the World",
@@ -35,7 +47,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} ${magra.variable} ${linden_hill.variable} ${mulish.variable}`}
+        className={`${inter.className} ${magra.variable} ${linden_hill.variable} ${mulish.variable} ${lexend_deca.variable}`}
       >
         {children}
       </body>

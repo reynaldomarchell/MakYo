@@ -17,6 +17,7 @@ const config: Config = {
         magra: ["var(--font-magra)"],
         linden_hill: ["var(--font-linden_hill)"],
         mulish: ["var(--font-mulish)"],
+        lexend_deca: ["var(--font-lexend_deca)"],
       },
     },
   },

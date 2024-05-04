@@ -5,7 +5,13 @@ import { Menu, X } from "lucide-react";
 export default function MainNav() {
   return (
     <nav className="font-magra flex w-screen items-center justify-between px-8 py-6 text-white md:px-10">
-      <Image src="/assets/logo.png" alt="MakYo" width={100} height={100} />
+      <Image
+        src="/assets/logo.png"
+        alt="MakYo"
+        width={213}
+        height={73}
+        className="w-28 md:w-40"
+      />
       <ul className="hidden items-center md:flex">
         <li className="border-r px-3">
           <Link href="#" className="transition-colors hover:text-blue-500">

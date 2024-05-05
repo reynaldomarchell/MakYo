@@ -4,9 +4,9 @@
 
 I'm Reynaldo Marchell Bagas Adji from BINUS University, here's the final product for the study case Front End Developer Intern.
 
-> I had tried to implement react query in this project. The app seems to be running perfectly, but a moment later, I've got several problem in Product component regarding the server and client component props like this one: "only plain objects, and a few built-ins, can be passed to server actions. classes or null prototypes are not supported."
+> I'd tried to implement react query in this project. The app seems to be running perfectly, but a moment later, I've got several problem in Product component regarding the server and client component props like this one: "only plain objects, and a few built-ins, can be passed to server actions. classes or null prototypes are not supported."
 
-> And so, I just go with traditional Axios get method instead. I've push the react query version to dev branch for further exploration.
+> And so, I just go with traditional Axios get method instead. I've pushed the react query version to dev branch for further exploration.
 
 ### Tools that used in this app
 

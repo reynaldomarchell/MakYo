@@ -1,7 +1,6 @@
 # MakYo
 
 ![alt text](image.png)
-![alt text](image-1.png)
 
 I'm Reynaldo Marchell Bagas adji from BINUS University, here's the final product for the study case Front End Developer Intern.
 

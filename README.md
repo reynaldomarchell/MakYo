@@ -38,4 +38,4 @@ I'm Reynaldo Marchell Bagas adji from BINUS University, here's the final product
   npm run dev
 ```
 
-5. App will run on http://localhost:3000
+4. App will run on http://localhost:3000

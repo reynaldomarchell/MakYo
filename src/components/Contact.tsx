@@ -48,7 +48,7 @@ export default function Contact() {
           className="w-80"
         />
         <form
-          className="font-lexend_deca flex flex-col gap-2 md:gap-3"
+          className="flex flex-col gap-2 font-lexend_deca md:gap-3"
           onSubmit={handleSubmit}
         >
           <div className="flex flex-col gap-1">
@@ -59,6 +59,7 @@ export default function Contact() {
               type="text"
               className="rounded-lg border-2 border-[#28BE46] p-2"
               id="name"
+              value={name}
               onChange={(e) => setName(e.target.value)}
             />
           </div>
@@ -70,6 +71,7 @@ export default function Contact() {
               type="email"
               className="rounded-lg border-2 border-[#28BE46] p-2"
               id="email"
+              value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>
@@ -81,6 +83,7 @@ export default function Contact() {
               name=""
               id="message"
               className="rounded-lg border-2 border-[#28BE46] p-2"
+              value={message}
               onChange={(e) => setMessage(e.target.value)}
             ></textarea>
           </div>

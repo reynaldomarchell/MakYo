@@ -2,7 +2,7 @@
 
 ![alt text](image.png)
 
-I'm Reynaldo Marchell Bagas adji from BINUS University, here's the final product for the study case Front End Developer Intern.
+I'm Reynaldo Marchell Bagas Adji from BINUS University, here's the final product for the study case Front End Developer Intern.
 
 > I had tried to implement react query in this project. The app seems to be running perfectly, but a moment later, I've got several problem in Product component regarding the server and client component props like this one: "only plain objects, and a few built-ins, can be passed to server actions. classes or null prototypes are not supported."
 

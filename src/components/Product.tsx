@@ -2,7 +2,8 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import axios from "axios";
+import { getProducts } from "@/server/actions";
+import { useQuery } from "@tanstack/react-query";
 
 type ProductType = {
   id: number;
@@ -11,45 +12,26 @@ type ProductType = {
   thumbnail: string;
 };
 
-// const productItems = [
-//   {
-//     title: "Baju",
-//     price: "Rp 50.000",
-//     thumbnail: "/assets/benefit1.png",
-//   },
-//   {
-//     title: "Baju",
-//     price: "Rp 50.000",
-//     thumbnail: "/assets/benefit2.png",
-//   },
-//   {
-//     title: "Baju",
-//     price: "Rp 50.000",
-//     thumbnail: "/assets/benefit3.png",
-//   },
-//   {
-//     title: "Baju",
-//     price: "Rp 50.000",
-//     thumbnail: "/assets/benefit4.png",
-//   },
-// ];
-
-async function getProduct() {
-  const response = await axios.get(
-    "https://dummyjson.com/products?limit=4&select=title,price,thumbnail",
-  );
-  const data = await response.data;
-  return data;
-}
-
 export default function Product() {
-  const [productItems, setProductItems] = useState<ProductType[]>([]);
+  // const [productItems, setProductItems] = useState<ProductType[]>([]);
 
-  useEffect(() => {
-    getProduct().then((data) => {
-      setProductItems(data.products);
-    });
-  }, []);
+  // useEffect(() => {
+  //   getProducts().then((data) => {
+  //     setProductItems(data.products);
+  //   });
+  // }, []);
+
+  const { data, error } = useQuery({
+    queryKey: ["products"],
+    queryFn: getProducts,
+  });
+
+  if (error) {
+    console.error(error.message);
+    return (
+      <h2 className="p-4 text-white">{`${error.name}: ${error.message}`}</h2>
+    );
+  }
 
   return (
     <div className="flex w-screen flex-col items-center justify-center gap-4 bg-white px-8 py-5 text-black md:px-10">
@@ -57,7 +39,7 @@ export default function Product() {
         See Our Product
       </h2>
       <div className="flex flex-col md:flex-row md:items-center md:justify-center">
-        {productItems.map((item: ProductType, index: number) => (
+        {data.products.map((item: ProductType, index: number) => (
           <div
             key={index}
             className="font-magra m-2 flex min-h-72 
